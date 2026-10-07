@@ -1,12 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-<title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Bella Napoli</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8ee;
+            color: #333;
+        }
+
+        header {
+            background-color: #d62828;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #d62828;
+            text-align: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .prodotto {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+            text-align: center;
+        }
+
+        .prodotto h3 {
+            color: #d62828;
+        }
+
+        .prezzo {
+            font-weight: bold;
+            color: #198754;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <header>
+        <h1>🍕 Pizzeria Bella Napoli</h1>
+        <p>La vera pizza italiana!</p>
+    </header>
+
+    <nav>
+        <a href="#pizze">Pizze</a>
+        <a href="#bevande">Bevande</a>
+        <a href="#contatti">Contatti</a>
+    </nav>
+
+    <section id="pizze">
+        <h2>🍕 Le nostre pizze</h2>
+
+        <div class="menu">
+
+            <div class="prodotto">
+                <h3>Margherita</h3>
+                <p>Pomodoro, mozzarella e basilico.</p>
+                <p class="prezzo">€ 6,00</p>
+            </div>
+
+            <div class="prodotto">
+                <h3>Diavola</h3>
+                <p>Pomodoro, mozzarella e salame piccante.</p>
+                <p class="prezzo">€ 8,00</p>
+            </div>
+
+            <div class="prodotto">
+                <h3>4 Formaggi</h3>
+                <p>Mozzarella, gorgonzola, fontina e parmigiano.</p>
+                <p class="prezzo">€ 9,00</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="bevande">
+        <h2>🥤 Bevande</h2>
+
+        <div class="menu">
+
+            <div class="prodotto">
+                <h3>Coca-Cola</h3>
+                <p>Lattina da 33 cl.</p>
+                <p class="prezzo">€ 2,50</p>
+            </div>
+
+            <div class="prodotto">
+                <h3>Acqua</h3>
+                <p>Acqua naturale o frizzante.</p>
+                <p class="prezzo">€ 1,50</p>
+            </div>
+
+            <div class="prodotto">
+                <h3>Aranciata</h3>
+                <p>Bevanda all'arancia da 33 cl.</p>
+                <p class="prezzo">€ 2,50</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatti">
+        <h2>📍 Contatti</h2>
+        <p style="text-align: center;">
+            Via Roma 10, Luco dei Marsi<br>
+            Telefono: 333 1234567
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Pizzeria Bella Napoli - Tutti i diritti riservati</p>
+    </footer>
 
 </body>
 </html>
